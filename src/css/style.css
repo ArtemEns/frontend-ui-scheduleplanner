@@ -1,95 +1,326 @@
-/* Eric Meyer's CSS Reset */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-/* End of Eric Meyer's CSS Reset */
 
-html {
-	height: 100%;
-}
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
-	display: block;
-}
-@font-face {
-		font-family: 'Lucida Grande';
-		src: url(css/font.ttf);
-	}	
+
+html {height: 100%;}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {display: block;}
+
+li {list-style: none;}
+
 body {
-	font: 14px/26px;
+	font-family: "Arial";
+	font-size: 14px;
 	width: 100%;
 	height: 100%;
-	background-color: #aaa;
-}
+ }
+
 .wrapper {
 	width: 320px;
 	margin: 0 auto;
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
-}
+	background-image: url(../gallery/background%20header.png);
+ }
 
+a {text-decoration: none;}
 
 /* Header
 -----------------------------------------------------------------------------*/
-.header {
-	height: 150px;
-}
 
+.header {background-image: url(../gallery/background%20main-menu.png);}
 
-/* Middle
------------------------------------------------------------------------------*/
-.content {
-	padding: 0 0 100px;
-}
+/*---------MAINMENU*/
 
+.main-menu {text-align: center;}
 
+	.main-menu li {
+		display: inline-block;
+		position: relative;
+		left: -10%;
+		padding-left: 9%;
+		padding-top: 2%;
+		padding-bottom: 2%;
+	 }
 
+		.main-menu li a {
+			color: #fff;
+			font-size: 11px;
+			padding: 8%;
+		 }
 
-/* Footer
------------------------------------------------------------------------------*/
-.footer {
-	width: 320px;
-	margin: -100px auto 0;
-	height: 100px;
+			.main-menu li a:hover {
+				background-color: #cdcdcd;
+				color: #4d4d4d;
+				border-radius: 1.4em;
+			 }
+
+/*-----------MAINMENU-ending*/
+/*-----------HEADER - MENU AND h1*/
+
+h1 {
+	font-family: "MyRiadProBold";
+	color: #983904;
+	font-size: 28px;
 	position: relative;
-}
+	left: 7%;
+ }
+
+.logo {padding-left: 0.6em;}
+
+	.logo img {
+		width: 43px;
+		height: auto;
+		float: left;
+	 }
+
+/*------------DEVICES*/
+
+.devices-menu {
+	padding-top: 1.1em;
+	padding-bottom: 1.1em;
+ }
+
+	.devices-menu picture {
+		display: block;
+		width: auto;
+		height: 40px;
+	 }
+
+	.devices-menu li {
+		display: inline-block;
+		padding-left: 11%;
+		position: relative;
+		left: -11%;
+		text-align: center;
+	 }
+
+	.devices-menu a {
+		color: #4d4d4d;
+		display: inline-block;
+		font-size: 75%;
+	 }
+
+		.devices-menu a:hover {color: #d65600;}
+
+	.devices-menu img {
+		width: auto;
+		height: 90%;
+	 }
+
+.line {
+	background-image: url(../gallery/line2.png);
+	height: 0.33em;
+	position: relative;
+	top: 1.2em;
+ }
+
+/*----------HEADER - MENU AND h1 end*/
+
+/* ----------Middle---*/
+
+.subcontent {background-image: url(../gallery/background%20maincontent.png);}
+
+	.subcontent ul {
+		padding-top: 1.2em;
+		padding-bottom: 2em;
+	 }
+
+		.subcontent ul li {display: inline-block;}
+
+	
+
+	.subcontent h2 {
+		display: inline-block;
+		font-size: 29px;
+		font-weight: 400;
+		color: #915542;
+		margin-bottom: -4px;
+		margin-left: ;
+	 }
+
+	
+
+	.subcontent img {
+		position: relative;
+		top: 1.7em;
+		right: 2.4em;
+		float: left;
+		width: 54px;
+		height: auto;
+	 }
+
+	.subcontent p {
+		padding-left: 3em;
+		padding-right: 1em;
+		font-size: 15px;
+		line-height: 23px;
+		color: #3e3e3e;
+		margin-top: 19px;
+	 }
+
+.featurescontent {
+	background-image: url(../gallery/background%20featurescontent.png);
+	margin-top: -1em;
+	margin-bottom: -1.1em;
+ }
+
+	.featurescontent li {
+		width: 90%;
+		line-height: 1em;
+		font-size: 15px;
+		padding-top: 2em;
+		padding-left: 1.5em;
+		display: inline-block;
+		line-height: 8px;
+	 }
+
+	.featurescontent h3 {
+		padding-left: 4em;
+		color: #ffffff;
+		font-weight: 400;
+		font-size: 21px;
+		line-height: 25px;
+	 }
+
+	.featurescontent li .icon {
+		height: 90px;
+		width: auto;
+		float: left;
+	 }
+
+	.featurescontent img {
+		width: 100%;
+		margin-top: 8px;
+	 }
+
+	.featurescontent li:last-child {padding-bottom: 2em;}
+
+.quotes {background-image: url(../gallery/background%20quotes.png);}
+
+	.quotes li {
+		display: inline-block;
+		padding-left: 8%;
+		padding-right: 4%;
+	 }
+
+		.quotes li:first-child {margin-top: 1em;}
+
+		.quotes li:last-child {margin-bottom: 4.8em;}
+
+	.quotes p {line-height: 1.7em;}
+
+	.quotes h5 {
+		margin-top: 1em;
+		text-align: right;
+		font-size: 19px;
+		font-weight: 400;
+		font-style: italic;
+	 }
+
+	.quotes a {color: #8f4f35;}
+
+.readmore {text-align: center;}
+
+.rmbutton {
+	display: inline-block;
+	width: 50%;
+	height: 1.1em;
+	border-radius: 1.2em;
+	font-size: 21px;
+	padding: 7px;
+	position: relative;
+	top: -77px;
+	z-index: 1;
+	color: antiquewhite;
+	background-color: #7f7f7f;
+	border: 2px solid;
+	border-color: antiquewhite;
+ }
+
+/* -----------------Footer--------------------*/
+
+.footer {
+	margin: -100px auto 0;
+	position: relative;
+	background-image: url(../gallery/background%20footer.png);
+ }
+
+.connect {
+	display: inline-block;
+	margin-left: 10%;
+	margin-bottom: 10%;
+	margin-top: 5%;
+	width: 50%;
+ }
+
+	.connect h4 {
+		font-family: "Arial";
+		font-size: 23px;
+		font-weight: 400;
+		color: darkgray;
+	 }
+
+	.connect li {display: inline-block;}
+
+
+.newsletter {
+	display: inline-block;
+	margin-top: -5%;
+	margin-left: 10%;
+	margin-right: 10%;
+ }
+
+	.newsletter h5 {
+		color: azure;
+		font-size: 14px;
+		font-family: "MyriadProRegular";
+		font-weight: 500;
+		opacity: 0.8;
+		margin-bottom: 2%;
+	 }
+
+	.newsletter button {
+		padding: 5px;
+		border-color: #21689d;
+		border: 1px solid #21689d;
+		border-radius: 8%;
+		font-size: 13px;
+		background-color: #21689d;
+		color: antiquewhite;
+	 }
+
+	.newsletter input {
+		width: 150px;
+		height: 20px;
+		background-color: black;
+		border: 3px solid black;
+		color: whitesmoke;
+	 }
+
+.partners {
+	margin-left: 10%;
+	margin-right: 10%;
+ }
+
+	.partners h5 {
+		font-size: 26px;
+		color: azure;
+		opacity: 0.8;
+		font-weight: 200;
+		margin-bottom: 7%;
+	 }
+
+	.partners li {display: block;}
+
+.ownername h6 {
+	font-size: 25px;
+	color: antiquewhite;
+	opacity: 0.8;
+	font-size: 15px;
+	font-weight: 500;
+	padding: 2%;
+	color: antiquewhite;
+	text-align: center;
+	border-top: 1px solid rgba(255, 255, 255,0.2);
+ }
+
