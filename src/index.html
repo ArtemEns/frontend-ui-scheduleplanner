@@ -2,262 +2,275 @@
 <html>
 
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
 	<meta charset="utf-8" />
 	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
 	<title>Schedule Planner</title>
-	<style>
-	
-	</style>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<link href="css/fonts.css" rel="stylesheet">
-<link href="css/normalize.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
-<link href="css/slide.css" rel="stylesheet">
-<link rel="stylesheet" href="css/swiper.min.css">
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="css/fonts.css" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/slide.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/swiper.min.css">
 </head>
 
 <body>
 
 	<!--UPPERMENU-->
 
-	<div class="wrapper">
+	<div id="wrapper">
 
-		<header class="header">
-			<div class="main-menu">
-				<ul>
-					<li><a href="">Home</a></li>
-					<li><a href="">Features</a></li>
-					<li><a href="">Support</a></li>
-					<li><a href="">Blog</a></li>
-				</ul>
-			</div>
+		<header id="header">
+			<ul class="nav">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Features</a></li>
+				<li><a href="#">Support</a></li>
+				<li><a href="#">Blog</a></li>
+			</ul>
 		</header>
 		<!-- .header-->
 
 
-
-
-
 		<!--HEADER CONTENT-->
+		<div id="head">
+			<div class="head-device">
+
+				<div class="badge"><img src="gallery/badge.png" title="1.5 million downloads"></div>
+				<div class="logo">
+					<h1><img src="gallery/header notebook.png"> Schedule Planner</h1>
+				</div>
 
 
-		<div class="content">
-			<div class="logo">
-				<picture><img src="gallery/header notebook.png" </picture>
-					<h1>Schedule Planner</h1>
+				<div class="clearfix"></div>
+				<ul class="devices-menu">
+					<li>
+						<a title="iPhone calendar app" class="iphone" href="http://itunes.apple.com/us/app/schedule-planner/id437461477?ls=1&amp;mt=8" target="_blank">iPhone</a>
+					</li>
+					<li>
+						<a title="iPad calendar app" class="ipad" href="http://itunes.apple.com/us/app/schedule-planner-hd/id447359837?ls=1&amp;mt=8"
+							target="_blank">iPad</a>
+					</li>
+					<li>
+						<a title="Android calendar app" class="android" href="https://play.google.com/store/apps/details?id=com.intersog.android.schedule"
+							target="_blank">Android</a>
+					</li>
+					<li>
+						<a title="Kindle Fire calendar app" class="kindle" href="http://www.amazon.com/INTERSOG-Schedule-Planner/dp/B00824BM76" target="_blank">Kindle Fire</a>
+					</li>
+				</ul>
 			</div>
-			<ul class="devices-menu">
-				<li>
-					<a href="#">
-						<picture><img src="gallery/header iphone.png" alt=""></img></picture>iPhone
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<picture><img src="gallery/header ipad.png" alt=""></img></picture>iPad
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<picture><img src="gallery/header android.png" alt=""></img></picture>Android
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<picture><img src="gallery/header kindle.png" alt=""></img></picture>Kindle
-					</a>
-				</li>
-			</ul>
+			<!-- Swiper -->
 
-  <!-- Swiper -->
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="gallery/slide1.png"></div>
+					<div class="swiper-slide"><img src="gallery/slide2.png"></div>
+					<div class="swiper-slide"><img src="gallery/slide1.png"></div>
+					<div class="swiper-slide"><img src="gallery/slide2.png"></div>
+					<div class="swiper-slide"><img src="gallery/slide5.png"></div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+		</div>
+		<!--LINE-->
 
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="gallery/slide2.png"></div>
-            <div class="swiper-slide"><img src="gallery/slide2.png"></div>
-            <div class="swiper-slide"><img src="gallery/slide2.png"></div>
-            <div class="swiper-slide"><img src="gallery/slide2.png"></div>
-            <div class="swiper-slide"><img src="gallery/slide2.png"></div>
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-    </div>
+		<div class="line"></div>
 
-			<!--LINE-->
+		<!--SUBCONTENT-->
+		<div id="content">
 
-				<div class="line"></div>
 
-			<!--SUBCONTENT-->
-
-			<div class="subcontent">
+			<div class="feature-list">
 				<ul>
-					<li>
-						<a href="#"><img src="gallery/body calendar.png" alt=""></img>
-							<h2>Google Calendar<br> & iCal integration</h2>
-						</a>
-						<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
-							quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+					<li class="feature-item">
+						<div class="feature-icon">
+							<img src="gallery/body calendar.png" alt="">
+						</div>
+						<div class="description">
+							<h2>Google Calendar & iCal integration</h2>
+							</a>
+							<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+								quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+						</div>
 					</li>
-
-
-					<li>
-						<a href="#"><img src="gallery/body dropbox.png" alt=""></img>
+					<li class="feature-item">
+						<div class="feature-icon">
+							<img src="gallery/body dropbox.png" alt="">
+						</div>
+						<div class="description">
 							<h2>Dropbox backup</h2>
-						</a>
-						<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
-							quis bibendum auctor, nisi elit consequat</p>
+							</a>
+							<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+								quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+						</div>
 					</li>
-
-
-					<li>
-						<a href="#"><img src="gallery/body charts.png" alt=""></img>
+					<li class="feature-item">
+						<div class="feature-icon">
+							<img src="gallery/body charts.png" alt="">
+						</div>
+						<div class="description">
 							<h2>Charts</h2>
-						</a>
-						<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
-							quis bibendum auctor, nisi elit consequat</p>
+							</a>
+							<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+								quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+						</div>
+					</li>
+					<li class="feature-item">
+						<div class="feature-icon">
+							<img src="gallery/body planned vs actual.png" alt="">
+						</div>
+						<div class="description">
+							<h2>Planned vs Actual</h2>
+							</a>
+							<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+								quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+						</div>
 					</li>
 
-
-					<li>
-						<a href="#"><img src="gallery/body planned vs actual.png" alt=""></img>
-							<h2>Planned vs<br> Actual</h2>
-						</a>
-						<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
-							quis bibendum auctor, nisi </p>
-					</li>
 				</ul>
 			</div>
 
 			<!--FEATURESCONTENT-->
 
-			<div class="featurescontent">
-				<li>
-					<div class="icon">
-						<a href="#"><img src="gallery/body password protection.png" alt=""></img>
-					</div>
-					<h3>Password protection</h3>
-					</a>
-				</li>
-				<li>
-					<div class="icon">
-						<a href="#"><img src="gallery/body repeating tasks.png" alt=""></img>
-					</div>
-					<h3>Copy & Paste feature</h3>
-					</a>
-				</li>
-				<li>
-					<div class="icon">
-						<a href="#"><img src="gallery/body copy paste feature.png" alt=""></img>
-					</div>
-					<h3>Repeating tasks feature</h3>
-					</a>
-				</li>
-				<li>
-					<div class="icon">
-						<a href="#"><img src="gallery/body customizable alerts.png" alt=""></img>
-					</div>
-					<h3>Customizable alerts and notifications</h3>
-					</a>
-				</li>
+			<div class="support-list">
+				<ul>
+					<li class="support-item">
+						<div class="icon">
+							<img src="gallery/body password protection.png" alt="">
+						</div>
+						<div class="description">
+							<h3>Password protection</h3>
+						</div>
+					</li>
+					<li class="support-item">
+						<div class="icon">
+							<img src="gallery/body copy paste feature.png" alt="">
+						</div>
+						<div class="description">
+							<h3>Copy & Paste feature</h3>
+						</div>
+					</li>
+					<li class="support-item">
+						<div class="icon">
+							<img src="gallery/body repeating tasks.png" alt="">
+						</div>
+						<div class="description">
+							<h3>Repeating tasks feature</h3>
+						</div>
+					</li>
+					<li class="support-item">
+						<div class="icon">
+							<img src="gallery/body customizable alerts.png" alt="">
+						</div>
+						<div class="description">
+							<h3>Customizable alerts and notifications</h3>
+						</div>
+					</li>
+				</ul>
 			</div>
 
 			<!--QUOTES-->
 			<div class="quotes">
-				<li>
-					<p>“A fantastic planner for the iPad. Its very useful sorting features and easy to use interface make it a real business-minded
-						option for time management on iOS.”</p>
-					<h5><a href="#">AppAdvice.com</a></h5>
-				</li>
-				<li>
-					<p>“Schedule Planner by INTERSOG can simplify your daily or weekly missions, plan your time and tasks to suit your personal
-						attributes.”
-					</p>
-					<h5><a href="#">Product Reviews</a></h5>
-				</li>
-				<li>
-					<p>“This app makes it easier for you to schedule your important plans daily and compare them side by side with the actual
-						activities you did on the day.”</p>
-					<h5><a href="#">ipadappsreviewer.com</a></h5>
-				</li>
+				<div class="holder">
+					<ul>
+						<li class="quote-item">
+							<p>“A fantastic planner for the iPad. Its very useful sorting features and easy to use interface make it a real business-minded
+								option for time management on iOS.”</p>
+							<a href="#" class="author">AppAdvice.com</a>
+
+						</li>
+						<li class="quote-item">
+							<p>“Schedule Planner by INTERSOG can simplify your daily or weekly missions, plan your time and tasks to suit your personal
+								attributes.”
+							</p>
+							<a href="#" class="author">Product Reviews</a>
+						</li>
+						<li class="quote-item">
+							<p>“This app makes it easier for you to schedule your important plans daily and compare them side by side with the actual
+								activities you did on the day.”</p>
+							<a href="#" class="author">ipadappsreviewer.com</a>
+						</li>
+					</ul>
+					<a class="readmore">Read More</a>
+				</div>
 			</div>
 
 
-			<!--READMORE-->
-			<div class="readmore">
-				<a href="#" class="rmbutton">Read More</a>
-			</div>
-			<!-- readmoreEND - ->
-	</main><! .content -->
+
+
+
 		</div>
-		<!-- .wrapper -->
+		<!-- #content -->
+		<div class="clear"></div>
 
+	</div>
+	<!-- .wrapper -->
 
-		<!--FOOTER-->
+	<!--FOOTER-->
 
-		<!--howtoCONNECT-->
-		<footer class="footer">
+	<!--howtoCONNECT-->
+	<footer id="footer">
+		<div class="holder">
 
 			<div class="connect">
-				<h4>Connect:</h4>
-				<li>
-					<a href="#"><img src="gallery/footer mail ico.png" alt=""></img>
-					</a>
-				</li>
-				<li>
-					<a href="#"><img src="gallery/footer twitter ico.png" alt=""></img>
-					</a>
-				</li>
-				<li>
-					<a href="#"><img src="gallery/footer fb ico.png" alt=""></img>
-					</a>
-				</li>
-				<li>
-					<a href="#"><img src="gallery/footer in ico.png" alt=""></img>
-					</a>
-				</li>
+				<h3>Connect:</h3>
+				<div class="social">
+					<ul>
+						<li><a href="">Email</a></li>
+						<li><a href="" class="twitter">Twitter</a></li>
+						<li><a href="" class="facebook">Facebook</a></li>
+						<li><a href="" class="linkedin">LinkedIn</a></li>
+					</ul>
+				</div>
 
 			</div>
 
 			<!--SUBSCRIBE-->
 
 			<div class="newsletter">
-				<h5>Subscribe to receive INTERSOG updates Subscribe</h5>
-				<input type="email"></input>
-				<button>Subscribe</button>
-			</div>
+				<div>
+					<h4>Subscribe to receive INTERSOG updates Subscribe</h4>
+					<div>
+						<div class="subscribe-form">
+							<form action="http://test.scheduleplannerapp.com" method="post">
+								<fieldset>
+									<input type="hidden" value="89.209.100.91" name="ip">
+									<p>
+										<input required type="text" size="20" value="" id="s2email" class="txt validate" name="email"><input type="submit"
+											value="Subscribe" name="subscribe" class="btn-subscribe">&nbsp;<input type="submit" value="Unsubscribe" style="visibility:hidden" name="unsubscribe">
+</p>
+</fieldset>
+</form>
+</div>
+</div>
+</div>
+</div>
 
-			<!--OUR PARTNERS-->
+<!--OUR PARTNERS-->
 
-			<div class="partners">
-				<h5>Our Partners:</h5>
-				<li>
-					<a href="#"><img src="gallery/footer ico partner1.png" alt=""></img>
-					</a>
-				</li>
-				<li>
-					<a href="#"><img src="gallery/footer ico partner2.png" alt=""></img>
-					</a>
-				</li>
+<div class="partners">
+	<h3>Our Partners:</h3>
+	<a href="" class="comboapp"><img src="gallery/footer ico partner1.png" title="Comboapp" alt="Comboapp"></a>
+	<a href="" class="digi"><img src="gallery/footer ico partner2.png" title="Digi-117" alt="Digi-117"></a>
+</div>
+</div>
+<!--OWNER-->
 
-			</div>
-
-			<!--OWNER-->
-
-			<div class="ownername">
-				<a href="">
-					<h6>&#169; INTERSOG 2005-2012</h6>
-				</a>
-			</div>
+<div class="owner">
+		<p>© INTERSOG 2005-2012</p>
+</div>
 
 
-		</footer>
-		<!-- .footer -->
- 		 <script src="js/swiper.min.js"></script>
-		 <script src="js/slide.js"></script>  <!--Slider-->
+</footer>
+<!-- .footer -->
+<script src="js/swiper.min.js"></script>
+<script src="js/slide.js"></script>
+<!--Slider-->
 
 </body>
 
