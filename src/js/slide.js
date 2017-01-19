@@ -3,7 +3,5 @@
         paginationClickable: true,
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
-        spaceBetween: 30,
-        hashnav: true,
-        hashnavWatchState: true
+        spaceBetween: 30
     });
